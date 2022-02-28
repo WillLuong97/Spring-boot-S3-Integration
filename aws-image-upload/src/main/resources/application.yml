@@ -1,0 +1,13 @@
+spring:
+  servlet:
+    multipart:
+      max-file-size: 128KB
+      max-request-size: 128KB
+  storage:
+    method: "${method}"
+  system:
+    path: /uploads
+aws:
+  s3:
+    accessKey: ACCESS_KEY
+    secretKey: SECRET_KEY
