@@ -1,10 +1,17 @@
 # Spring-boot-S3-Integration
-This projects will use spring boot to upload and stream file from a React front end onto an S3 bucket.
 
-## Set up
+A simple spring boot project that integrates with Amazon S3 to store images on the user created bucket. In addition, the application also
+allows for storing the files onto the system folder. 
 
-To begin this project, we will need a AWS account and S3 ready. Once we have an S3 instance set up and generate access key for AWS account, we can then start setting up an AWS S3 clients
+## Requirement
 
-On the other hand, we will need to add the AWS Java SDK via the maven repo at: https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk/1.11.1009
+For AWS S3 user only:
+- AWS S3 account and at least one active running S3 bucket for the application to upload and download images from. 
+
+For filesystem user: 
+A directory path to store the images to
+
+Postgres or MySql database connected to the application 
+
 
 

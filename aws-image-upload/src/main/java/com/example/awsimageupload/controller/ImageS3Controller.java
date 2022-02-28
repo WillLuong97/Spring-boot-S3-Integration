@@ -2,6 +2,7 @@ package com.example.awsimageupload.controller;
 
 import com.example.awsimageupload.entity.Image;
 import com.example.awsimageupload.service.ImageService;
+import com.example.awsimageupload.service.impl.InternalSystemServiceImpl;
 import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -19,6 +20,9 @@ import java.util.List;
 public class ImageS3Controller {
     @Autowired
     private ImageService imageService;
+
+    @Autowired
+    private final InternalSystemServiceImpl internalSystemService;
 
     @GetMapping
     public ResponseEntity<List<Image>> getImages(){
